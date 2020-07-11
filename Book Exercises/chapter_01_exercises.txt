@@ -1,12 +1,17 @@
 1 // What is the function of the secondary memory in a computer?
-Secondary memory is used to store data for long periods of time even when power to the computer is gone. Examples of this are Hard Drives and USB sticks.
+Secondary memory is used to store data for long periods of time even when power to the computer is gone. Examples of
+this are Hard Drives and USB sticks.
 
 2 // What is a program?
 "I could find no mention what 'program' meant. That said, I could have just missed it."
-A program is set of instructions (source code) that programmers write for the CPU in order to have it perform those instructions in a language it can understand. ("This is my guess, am I right?")
+A program is set of instructions (source code) that programmers write for the CPU in order to have it perform those
+instructions in a language it can understand. ("This is my guess, am I right?")
+According to the book: "..the basic sequence of python statements that have been crafted to do something."
+("I feel like I was spot on")
 
 3 // What is the difference between a compiler and an interpreter?
-An interpreter can process each line of code immediately upon parsing it. A compiler requires the entire file to process the source code, convert it to machine language and save it as a file (.exe, .dll, etc.,) for future use.
+An interpreter can process each line of code immediately upon parsing it. A compiler requires the entire file to
+process the source code, convert it to machine language and save it as a file (.exe, .dll, etc.,) for future use.
 
 4 // Which of the following contains "machine code"?
 The computer hardware contains machine code.
@@ -18,15 +23,28 @@ primt 'Hello world!'
 ^
 SyntaxError: invalid syntax
 >>>
-The print function is mispelled.
+The print function is misspelled.
 
 6 // Where in the computer is a variable such as "x" stored after the following Python line flashes?
-Variables are stored in the memory (RAM).
+Variables are stored in the main memory (RAM).
 
 7 // What will the following program print out:
+x = 43
+x = x + 1
+print(x)
+
+It will print: (b) 44
 
 8 // Explain each of the following using an example of a human capability: (1) Central processing unit, (2) Main Memory,
  (3) Secondary Memory, (4) Input Device, and (5) Output Device. For example, "What is the human equivalent to a
  Central Processing Unit"?
 
+ (1) The CPU is akin to the human brain.
+ (2) Main Memory would refer to short-term memory storage because of it's volatile nature.
+ (3) Secondary Memory would refer to long-term memory because we retain it for much longer.
+ (4) Input Device could be compared to a spoon because we use it as a tool to help us eat more neatly.
+ (5) Output Device could be compared to poop.. I won't go into it.
+
 9 // How do you fix a "Syntax Error"?
+Syntax Errors are grammatical errors in the code so to fix it you would need to first find the error and then replace
+the misspelled word with the correct spelling.
