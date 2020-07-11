@@ -23,7 +23,7 @@ primt 'Hello world!'
 ^
 SyntaxError: invalid syntax
 >>>
-The print function is misspelled.
+The print function is misspelt.
 
 6 // Where in the computer is a variable such as "x" stored after the following Python line flashes?
 Variables are stored in the main memory (RAM).
@@ -47,4 +47,4 @@ It will print: (b) 44
 
 9 // How do you fix a "Syntax Error"?
 Syntax Errors are grammatical errors in the code so to fix it you would need to first find the error and then replace
-the misspelled word with the correct spelling.
+the misspelt word with the correct spelling.
