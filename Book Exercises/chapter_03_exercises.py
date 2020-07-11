@@ -43,9 +43,11 @@ else:
 # F
 # Run the program repeatedly as shown above to test the various different values for input.
 
-while True:
-    score = input("Enter Score: ")
-    if score <= 1.0 and score > 0.0:
+print("This is the initial code answering the question within the parameters of the question")
+score = input("Enter Score: ")
+try:
+    score = float(score)  # Is there a more efficient way to do this?
+    if score > 0.0 and score < 1.0:
         if score >= 0.9:
             print("A")
         elif score >= 0.8:
@@ -56,11 +58,55 @@ while True:
             print("D")
         elif score < 0.6:
             print("F")
-    elif score is not float(score) or score > 1.0:
+    else:
         print("Bad score")
+except:
+    print("Bad score")
 
 # I'm having trouble with the program outputting 'Bad score' when I enter 'perfect' because what I input is
 # converted to a float. I tried adding try to the if/elif statements but I come upon the problem of every input
-# showing ouput 'Bad score'.
+# showing output 'Bad score'.
 # I next tried this line:
 #   elif score is not float(score) or score > 1.0:  Failed
+# So I found the solution which was to use try, convert to float in that statement and use except to handle any strings
+# that would be inputted.  I'm sure there must be a more efficient way of doing this.'
+# I wanted to make the code automatically enter the required values for the exercise so I coded a loop below updating
+# a 'n' variable for each iteration
+
+print("\n== This is my automatic code solving the solution ==")
+count = 0
+n = 0
+while count < 5:  # these are the values told to input to test the code
+    if count == 0:
+        n = "0.95"  # answer should be A
+    elif count == 1:
+        n = "perfect"  # answer should be Bad Score
+    elif count == 2:
+        n = "10.0"  # answer should be Bad Score
+    elif count == 3:
+        n = "0.75"  # answer should be C
+    elif count == 4:
+        n = "0.5"  # answer should be F
+
+    score = n
+
+    try:
+        score = float(n)
+        if score > 0.0 and score < 1.0:
+            if score >= 0.9:
+                print("A")
+            elif score >= 0.8:
+                print("B")
+            elif score >= 0.7:
+                print("C")
+            elif score >= 0.6:
+                print("D")
+            elif score < 0.6:
+                print("F")
+        else:
+            print("Bad score")
+    except:
+        print("Bad score")
+
+    count += 1
+    
