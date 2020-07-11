@@ -2,15 +2,26 @@
 Secondary memory is used to store data for long periods of time even when power to the computer is gone. Examples of this are Hard Drives and USB sticks.
 
 2 // What is a program?
+"I could find no mention what 'program' meant. That said, I could have just missed it."
+A program is set of instructions (source code) that programmers write for the CPU in order to have it perform those instructions in a language it can understand. ("This is my guess, am I right?")
 
 3 // What is the difference between a compiler and an interpreter?
 An interpreter can process each line of code immediately upon parsing it. A compiler requires the entire file to process the source code, convert it to machine language and save it as a file (.exe, .dll, etc.,) for future use.
 
 4 // Which of the following contains "machine code"?
+The computer hardware contains machine code.
 
 5 // What is wrong with the following code?
+>>> primt 'Hello world!'
+File "<stdin>", line 1
+primt 'Hello world!'
+^
+SyntaxError: invalid syntax
+>>>
+The print function is mispelled.
 
 6 // Where in the computer is a variable such as "x" stored after the following Python line flashes?
+Variables are stored in the memory (RAM).
 
 7 // What will the following program print out:
 
