@@ -42,3 +42,25 @@ else:
 # Enter score: 0.5
 # F
 # Run the program repeatedly as shown above to test the various different values for input.
+
+while True:
+    score = input("Enter Score: ")
+    if score <= 1.0 and score > 0.0:
+        if score >= 0.9:
+            print("A")
+        elif score >= 0.8:
+            print("B")
+        elif score >= 0.7:
+            print("C")
+        elif score >= 0.6:
+            print("D")
+        elif score < 0.6:
+            print("F")
+    elif score is not float(score) or score > 1.0:
+        print("Bad score")
+
+# I'm having trouble with the program outputting 'Bad score' when I enter 'perfect' because what I input is
+# converted to a float. I tried adding try to the if/elif statements but I come upon the problem of every input
+# showing ouput 'Bad score'.
+# I next tried this line:
+#   elif score is not float(score) or score > 1.0:  Failed
