@@ -158,57 +158,75 @@ F
 Run the program repeatedly to test the various different values for input.""")
 
 print("""\n=== Answer ===""")
-try:
-    score = float(score)  # Is there a more efficient way to do this?
-    if score > 0.0 and score < 1.0:
-        if score >= 0.9:
-            print("A")
-        elif score >= 0.8:
-            print("B")
-        elif score >= 0.7:
-            print("C")
-        elif score >= 0.6:
-            print("D")
-        elif score < 0.6:
-            print("F")
-    else:
-        print("Bad score")
-except:
-    print("Bad score")
+
+def compute(score):
+	try:
+	    score = float(score)  # Is there a more efficient way to do this?
+	    if score > 0.0 and score < 1.0:
+	        if score >= 0.9:
+	            return "A"
+	        elif score >= 0.8:
+	            return "B"
+	        elif score >= 0.7:
+	            return "C"
+	        elif score >= 0.6:
+	            return "D"
+	        elif score < 0.6:
+	            return "F"
+	    else:
+	        return "Bad score"
+	except:
+	    return "Bad score"
+
+
+score = input("Enter score: ")	    
+print(compute(score))
 
 print("\n=== Answer === This is my automatic code solving the solution ==")
+
 count = 0
 n = 0
+
+
+def compute2(score):	
+	try:
+	    score = float(score)  # Is there a more efficient way to do this?
+	    if score > 0.0 and score < 1.0:
+	        if score >= 0.9:
+	            return "A"
+	        elif score >= 0.8:
+	            return "B"
+	        elif score >= 0.7:
+	            return "C"
+	        elif score >= 0.6:
+	            return "D"
+	        elif score < 0.6:
+	            return "F"
+	    else:
+	        return "Bad score"
+	except:
+	    return "Bad score"
+
+
 while count < 5:  # these are the values told to input to test the code
     if count == 0:
         n = "0.95"  # answer should be A
+        score = n
+        print(compute2(score))
     elif count == 1:
         n = "perfect"  # answer should be Bad Score
+        score = n
+        print(compute2(score))
     elif count == 2:
         n = "10.0"  # answer should be Bad Score
+        score = n
+        print(compute2(score))
     elif count == 3:
         n = "0.75"  # answer should be C
+        score = n
+        print(compute2(score))
     elif count == 4:
         n = "0.5"  # answer should be F
-
-    score = n
-
-    try:
-        score = float(n)
-        if score > 0.0 and score < 1.0:
-            if score >= 0.9:
-                print("A")
-            elif score >= 0.8:
-                print("B")
-            elif score >= 0.7:
-                print("C")
-            elif score >= 0.6:
-                print("D")
-            elif score < 0.6:
-                print("F")
-        else:
-            print("Bad score")
-    except:
-        print("Bad score")
-
+        score = n
+        print(compute2(score))
     count += 1
