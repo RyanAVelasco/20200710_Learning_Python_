@@ -14,8 +14,49 @@ Enter a number: done
 print("""\n=== Answer ===""")
 
 
+def results():
+    global numberList
+    return "Total:", sum(numberList), "Count:", len(numberList), "Mean:", sum(numberList) / len(numberList)
+
+
+numberList = []
+
+while True:
+    number = input("Enter a number: ")
+    try:
+        if number == "done":
+            print(results())
+            break
+        else:
+            number = int(number)
+            numberList.append(number)
+    except:
+        print("bad data")
+    number = str(number)
+
 print("""\n\n=== Exercise 2 ===
 Write another program that prompts for a list of numbers as above and at the end prints out 
 both the maximum and minimum of the numbers instead of the average.""")
 
 print("""\n=== Answer ===""")
+
+
+def results():
+    global numberList
+    return "Max:", max(numberList), "Min:", min(numberList)
+
+
+numberList = []
+
+while True:
+    number = input("Enter a number: ")
+    try:
+        if number == "done":
+            print(results())
+            break
+        else:
+            number = int(number)
+            numberList.append(number)
+    except:
+        print("bad data")
+    number = str(number)
