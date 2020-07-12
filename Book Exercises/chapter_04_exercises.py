@@ -159,24 +159,25 @@ Run the program repeatedly to test the various different values for input.""")
 
 print("""\n=== Answer ===""")
 
+
 def compute(score):
-	try:
-	    score = float(score)  # Is there a more efficient way to do this?
-	    if score > 0.0 and score < 1.0:
-	        if score >= 0.9:
-	            return "A"
-	        elif score >= 0.8:
-	            return "B"
-	        elif score >= 0.7:
-	            return "C"
-	        elif score >= 0.6:
-	            return "D"
-	        elif score < 0.6:
-	            return "F"
-	    else:
-	        return "Bad score"
-	except:
-	    return "Bad score"
+    try:
+        score = float(score)  # Is there a more efficient way to do this?
+        if score > 0.0 and score < 1.0:
+            if score >= 0.9:
+                return "A"
+            elif score >= 0.8:
+                return "B"
+            elif score >= 0.7:
+                return "C"
+            elif score >= 0.6:
+                return "D"
+            elif score < 0.6:
+                return "F"
+        else:
+            return "Bad score"
+    except:
+        return "Bad score"
 
 
 score = input("Enter score: ")	    
@@ -188,24 +189,24 @@ count = 0
 n = 0
 
 
-def compute2(score):	
-	try:
-	    score = float(score)  # Is there a more efficient way to do this?
-	    if score > 0.0 and score < 1.0:
-	        if score >= 0.9:
-	            return "A"
-	        elif score >= 0.8:
-	            return "B"
-	        elif score >= 0.7:
-	            return "C"
-	        elif score >= 0.6:
-	            return "D"
-	        elif score < 0.6:
-	            return "F"
-	    else:
-	        return "Bad score"
-	except:
-	    return "Bad score"
+def compute2(score):
+    try:
+        score = float(score)  # Is there a more efficient way to do this?
+        if score > 0.0 and score < 1.0:
+            if score >= 0.9:
+                return "A"
+            elif score >= 0.8:
+                return "B"
+            elif score >= 0.7:
+                return "C"
+            elif score >= 0.6:
+                return "D"
+            elif score < 0.6:
+                return "F"
+        else:
+            return "Bad score"
+    except:
+        return "Bad score"
 
 
 while count < 5:  # these are the values told to input to test the code
