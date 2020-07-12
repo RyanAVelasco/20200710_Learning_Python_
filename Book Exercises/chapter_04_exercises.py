@@ -59,6 +59,7 @@ def print_lyrics():
     print("I'm a lumberjack, and I'm okay.")
     print('I sleep all night and I work all day.')
 
+
 def repeat_lyrics():
     print_lyrics()
     print_lyrics()
@@ -70,13 +71,16 @@ after the definition of repeat_lyrics. What happens when you run this program?""
 
 print("""\n=== Answer ===""")
 
+
 def print_lyrics():
     print("I'm a lumberjack, and I'm okay.")
     print('I sleep all night and I work all day.')
 
+
 def repeat_lyrics():
     print_lyrics()
     print_lyrics()
+
 
 repeat_lyrics()
 
@@ -128,9 +132,11 @@ print("""\n=== Answer ===""")
 h = 45
 r = 10
 
+
 def compute(hours, rate):
     print(h * r, "<-- Does not include time-and-a-half overtime")
     print(h * (r * 1.5), "<-- Includes time-and-a-half overtime")
+
 
 compute(h, r)
 
@@ -163,7 +169,7 @@ print("""\n=== Answer ===""")
 def compute(score):
     try:
         score = float(score)  # Is there a more efficient way to do this?
-        if score > 0.0 and score < 1.0:
+        if 0.0 < score < 1.0:  # This was not taught in chapter, it was a test I thought of which worked!
             if score >= 0.9:
                 return "A"
             elif score >= 0.8:
@@ -192,7 +198,7 @@ n = 0
 def compute2(score):
     try:
         score = float(score)  # Is there a more efficient way to do this?
-        if score > 0.0 and score < 1.0:
+        if 0.0 < score < 1.0:
             if score >= 0.9:
                 return "A"
             elif score >= 0.8:
@@ -211,23 +217,13 @@ def compute2(score):
 
 while count < 5:  # these are the values told to input to test the code
     if count == 0:
-        n = "0.95"  # answer should be A
-        score = n
-        print(compute2(score))
+        print(compute2(score="0.95"))  # answer should be A "I tried out adding an expression to print! It worked!"
     elif count == 1:
-        n = "perfect"  # answer should be Bad Score
-        score = n
-        print(compute2(score))
+        print(compute2(score="perfect"))  # answer should be Bad Score
     elif count == 2:
-        n = "10.0"  # answer should be Bad Score
-        score = n
-        print(compute2(score))
+        print(compute2(score="10.0"))  # answer should be Bad Score
     elif count == 3:
-        n = "0.75"  # answer should be C
-        score = n
-        print(compute2(score))
+        print(compute2(score="0.75"))  # answer should be C
     elif count == 4:
-        n = "0.5"  # answer should be F
-        score = n
-        print(compute2(score))
+        print(compute2(score="0.5"))  # answer should be F
     count += 1
